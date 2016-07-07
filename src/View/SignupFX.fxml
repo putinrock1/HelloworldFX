@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.TilePane?>
+
+<GridPane alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="345.0" prefWidth="515.0" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Signupcontroller">
+  <columnConstraints>
+    <ColumnConstraints />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="22.0" minHeight="10.0" prefHeight="22.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="26.0" minHeight="10.0" prefHeight="21.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="36.0" minHeight="10.0" prefHeight="21.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="22.0" minHeight="0.0" prefHeight="2.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="23.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="32.0" minHeight="8.0" prefHeight="32.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="30.0" minHeight="1.0" prefHeight="1.0" vgrow="SOMETIMES" />
+      
+  </rowConstraints>
+   <children>
+
+      <Button mnemonicParsing="false" onMouseClicked="#createAccount" prefHeight="29.0" prefWidth="149.0" style="-fx-background-color: blue" text="Create Account" GridPane.columnIndex="2" GridPane.rowIndex="14" />
+      <Label prefHeight="35.0" prefWidth="162.0" text="First Name" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Label fx:id="emailError" prefHeight="44.0" prefWidth="121.0" text="Email Error!" textFill="#dd0505" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+      <Label prefHeight="34.0" prefWidth="153.0" text="User Name" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+       <Label prefHeight="32.0" prefWidth="161.0" text="Last Name" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <PasswordField fx:id="pw" promptText="Enter Password" style="-fx-background-color: aliceblue" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+
+       <PasswordField fx:id="confirmpw" promptText="Re-Enter Password" style="-fx-background-color: yellowgreen" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+      <TextField fx:id="firstName" promptText="Enter your First Name" style="-fx-background-color: brown" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <Button mnemonicParsing="false" text="Sign Up" />
+      <Label prefHeight="33.0" prefWidth="155.0" text="Email ID " GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <Label prefHeight="32.0" prefWidth="159.0" text="Password" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      <Label prefHeight="32.0" prefWidth="150.0" text="Confirm Password" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+      <Label prefHeight="26.0" prefWidth="161.0" text="Phone" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+      <Label prefHeight="26.0" prefWidth="160.0" text="Date of Birth" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+      <Label prefHeight="27.0" prefWidth="161.0" text="SSN" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+      <Label prefHeight="26.0" prefWidth="161.0" text="Gender" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+      <TextField fx:id="LastName" promptText="Enter your Last Name" style="-fx-background-color: bisque" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      <TextField fx:id="uname" promptText="Enter your User Name" style="-fx-background-color: antiquewhite" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+      <TextField fx:id="emailID" promptText="Enter your Email" style="-fx-background-color: brown" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+      <TextField fx:id="phone" promptText="Enter your Phone Number" style="-fx-background-color: coral" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+      <TextField fx:id="DOB" promptText="Your Date of Birth" style="-fx-background-color: burlywood" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+      <TextField fx:id="SSN" promptText="Enter your SSN" style="-fx-background-color: darkslategray" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+      <TilePane GridPane.columnIndex="2" GridPane.rowIndex="12" />
+      <CheckBox mnemonicParsing="false" style="-fx-border-color: blue; -fx-backround-color: #f595ff" text="Male" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+      <CheckBox mnemonicParsing="false" prefHeight="18.0" prefWidth="86.0" style="-fx-border-color: darkgreen" text="Female" GridPane.columnIndex="2" GridPane.rowIndex="11" />
+      <Label GridPane.columnIndex="1" GridPane.rowIndex="14" />
+      <Label prefHeight="28.0" prefWidth="70.0" text="Photo" GridPane.rowIndex="14" />
+
+
+   </children>
+</GridPane>
